@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16sp">
+
+  <ImageView
+      android:id="@+id/icone"
+      android:layout_width="88dp"
+      android:layout_height="88dp"
+      android:src="@mipmap/ic_launcher"/>
+
+  <LinearLayout
+      android:id="@+id/item_layout_textos"
+      android:layout_width="match_parent"
+      android:layout_height="88dp"
+      android:orientation="vertical"
+      android:paddingLeft="16sp">
+
+    <TextView
+        android:id="@+id/item_titulos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="bottom"
+        android:text="TITULO"/>
+
+    <TextView
+        android:id="@+id/item_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="top"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:text="DESCRIÇÃO"/>
+  </LinearLayout>
+</LinearLayout>
